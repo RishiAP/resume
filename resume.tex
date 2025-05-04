@@ -1,0 +1,211 @@
+%-------------------------
+% Resume in Latex
+% Author : Debjyoti Mondal
+% Based off of: https://github.com/RihsiAP/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Debjyoti Mondal} \\ \vspace{1pt}
+    \small +919474108560 $|$ \href{mailto:debjyotim2019@gmail.com}{\underline{debjyotim2019@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/rishi-the-programmer}{\underline{linkedin.com/in/rishi-the-programmer}} $|$
+    \href{https://github.com/RishiAP}{\underline{github.com/RishiAP}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Govind Ballabh Pant University of Agriculture and Technology}{Pantnagar, Uttarakhand, India}
+      {Bachelor of Technology in Computer Engineering}{October 2022 -- June 2026}
+    \resumeSubheading
+      {Indian Institute of Technology, Madras}{Chennai, Tamil Nadu, India}
+      {Bachelor of Science in Data Science and Applications}{June 2023 -- Present}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Executive Member}{July 2024 -- Present}
+      {The Robotics Club, G. B. Pant University of Agriculture and Technology}{Pantnagar, Uttarakhand, India}
+      \resumeItemListStart
+      \resumeItem{Led and managed multiple events and projects, demonstrating strong teamwork and coordination skills.}
+      \resumeItem{Built a universal radio controller for 4x4 control of cars and drones.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Member}{September 2023 -- June 2024}
+      {The Robotics Club, G. B. Pant University of Agriculture and Technology}{Pantnagar, Uttarakhand, India}
+      \resumeItemListStart
+        \resumeItem{Built a Wi-Fi smart door system with password access and remote control capability.}
+        \resumeItem{Built an automatic plant monitoring system to
+        optimize plant care using real-time data.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{NewsHelp} $|$ \emph{Next.js, MongoDB, React Redux, Nodemailer, Quill, Firebase Auth, Sanity}}{May 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using Next.js with SSR for nice SEO and Bootstrap for styling.}
+            \resumeItem{Implemented Google OAuth, and password for authentication.}
+            \resumeItem{Provided Admin Dashboard for managing articles with Sanity CMS support.}
+            \resumeItem{Email verification and password reset implementation.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Alumni cell GBPUAT} $|$ \emph{Next.js, MySQL, Cloudinary, Tailwind, Firebase Auth}}{October 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a platform for alumni of GBPUAT to connect and share their experiences}
+            \resumeItem{Implemented profile management along with search functionality where anyone can search for alumni profiles.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{HouseGenie} $|$ \emph{Flask, SQLite, JWT, Bootstrap}}{October 2024 -- December 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a Household Service app for IITM MAD-I Project}
+            \resumeItem{Implemented Bcrypt Auth, Profile management, Admin Control, Graphs and Stats}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{GBPUAT Events} $|$ \emph{ Next.js, MongoDB, Cloudinary, Google APIs, Tailwind}}{October 2024 -- November 2024}
+          \resumeItemListStart
+            \resumeItem{A platform for GBPUAT to manage events and its attendance system}
+            \resumeItem{Manage events, registrations, invitations, and emails with attractive UI/UX}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Javascript/Typescript, Python, PHP, C/C++, HTML/CSS, Bash} \\
+     \textbf{Frameworks}{: Next.js, React, Node.js, Express.js, Flask, JavaFX, Tailwind CSS, Bootstrap, Material-UI} \\
+     \textbf{Databases}{: MySQL, PostgreSQL, MongoDB, Neo4j} \\
+     \textbf{Developer Tools}{: Git, VS Code, Linux, Postman, Firebase, Clerk, Vercel, LaTeX} \\
+     \textbf{Libraries}{: Mongoose, Redux, ShadCN, Axios, JWT, Quill.js, Chart.js} \\
+     \textbf{IOT Devices}{: ESP 32, ESP 8266, Raspberry Pi Pico, Arduino}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
