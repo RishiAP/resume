@@ -4,3 +4,8 @@ resume.fls
 resume.log
 resume.out
 resume.synctex.gz
+*.md
+!README.md
+bilingual
+md_files
+tex
